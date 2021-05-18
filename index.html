@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fontawesome-all.css">
-    <link rel="stylesheet" href="js/bootstrap.min.js">
-    <link rel="stylesheet" href="js/jquery.min.js">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
 
 </head>
 <body>
@@ -22,51 +21,711 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarcollapse">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">HOME</a>
+                    <a class="nav-link" href="#sectionhome">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">ABOUT</a>
+                    <a class="nav-link" href="#sectionabout">ABOUT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">BLOG</a>
+                    <a class="nav-link" href="#sectionblog">PORTFOLIO</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACT</a>
+                    <a class="nav-link" href="#sectioncontact">CONTACT</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="container-fulid">
-        <img src="img/homepage/Header Web-Blue.jpg" alt="homepage" class="img-fulid">
+    <div id="sectionhome" class="container-fulid scrollspy sectionhome">
+        <img src="assets/img/homepage/Header-Web-Blue.jpg" alt="homepage" class="img-fulid">
     </div>
-    <div class="container pt-5">
+    <div id="sectionabout" class="container section scrollspy sectionabout">
         <div class="row">
-            <div class="col-6 ">
-                <img src="img/resume/Photome.jpg" alt="resume" class="img-thumbnail">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 wow fadeInLeft mb-3" data-wow-duration="1s">
+                <img src="assets/img/resume/Photome.jpg" alt="resume" class="img-thumbnail mx-auto d-block">
             </div>
-            <div class="col-6">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                 <div class="col-12">
                     <h2>ABOUT</h2>
                     <hr class="blue-line">
                 </div>
                 <div class="col-12">
-                    <p>The future belongs to those who believe in the beauty of their dreams .</p>
+                    <div class="row">
+                        <div class="col-3 mb-2">
+                            <b>HTML</b>
+                        </div>
+                        <div class="col-9">
+                            <div class="progress">
+                                <div class="progressbar htmlbar"></div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-2">
+                            <b>CSS</b>
+                        </div>
+                        <div class="col-9">
+                            <div class="progress">
+                                <div class="progressbar cssbar"></div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-2">
+                            <b>JS</b>
+                        </div>
+                        <div class="col-9">
+                            <div class="progress">
+                                <div class="progressbar jsbar"></div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-2">
+                            <b>PHP</b>
+                        </div>
+                        <div class="col-9">
+                            <div class="progress">
+                                <div class="progressbar phpbar"></div>
+                            </div>
+                        </div>
+                        <div class="col-3 mb-2">
+                            <b>SQL</b>
+                        </div>
+                        <div class="col-9">
+                            <div class="progress">
+                                <div class="progressbar sqlbar"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12 div-resume">
-                    <button type="button" class="btn btn-resume" value="">Resume</button>
+                    <button type="button" class="btn btn-bluebutton" data-toggle="modal" data-target="#resumeModal">Resume</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container pt-5">
+    <!--resume model-->
+    <div class="modal fade" id="resumeModal" data-backdrop="static" tabindex="-1" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="exampleModalLabel">Resume</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times modal-font"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-12">
+                        <div class="container-fulid">
+                            <div class="row">
+                                <div class="col-12 col-sm-3">
+                                    <img src="assets/img/resume/wwd-me.jpg" class="rounded-circle mx-auto d-block" alt="profileimg" width="200" height="200">
+                                </div>
+                                <div class="col-12 col-sm-9">
+                                    <div class="col-12">
+                                        <h4 class="fontblue">Profile</h4>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-4 col-sm-2">
+                                                <label>ชื่อ - นามสกุล</ส>
+                                            </div>
+                                            <div class="col-8 col-sm-10">
+                                                <label class="fontgray">กมล วรรณกุล</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-4 col-sm-2">
+                                                <label>ที่อยู่</label>
+                                            </div>
+                                            <div class="col-8 col-sm-10">
+                                                <label class="fontgray">17 ซอยศิริเกษม 19 แยก 10 ถนนพุทธมณฑลสาย 3 แขวงบางไผ่ เขตบางแค กรุงเทพมหานคร 10160</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-4 col-sm-2">
+                                                <label>อีเมล์</label>
+                                            </div>
+                                            <div class="col-8 col-sm-10">
+                                                <label class="fontgray">KamolObb@gmail.com</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-4 col-sm-2">
+                                                <label>โทรศัพท์</label>
+                                            </div>
+                                            <div class="col-8 col-sm-10">
+                                                <label class="fontgray">090-956-4379</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>เพศ</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">ชาย</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>สัญชาติ</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">ไทย</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>วันเกิด</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">27 มีนาคม 2538</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>ศาสนา</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">พุทธ</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>อายุ</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">26 ปี</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>สถานภาพสมรส</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">โสด</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>ส่วนสูง</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">175 ซม.</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>น้ำหนัก</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">57 กก.</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-4 col-sm-2">
+                                                <label>สถานะภาพทางทหาร</label>
+                                            </div>
+                                            <div class="col-8 col-sm-10">
+                                                <label class="fontgray">ได้รับการยกเว้น / จบหลักสูตรรักษาดินแดน(รด.)</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-9 offset-sm-3 mt-4">
+                                    <div class="col-12">
+                                        <h4 class="fontblue">Education</h4>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-4 col-sm-2">
+                                                <label>สถานศึกษา</label>
+                                            </div>
+                                            <div class="col-8 col-sm-10">
+                                                <label class="fontgray">มหาวิทยาลัยเอเชียอาคเนย์</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>ระดับการศึกษา</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">ปริญญาตรี</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>สาขา</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">คอมพิวเตอร์ธุรกิจ</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>คณะ</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">บริหารธุรกิจ</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>วุฒิการศึกษา</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">บริหารธุรกิจบัณฑิต</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>เกรด</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">2.00</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>จบปีการศึกษา</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">2561</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-4 col-sm-2">
+                                                <label>สถานศึกษา</label>
+                                            </div>
+                                            <div class="col-8 col-sm-10">
+                                                <label class="fontgray">วิทยาลัยเทคโนโลยีพณิชยการราชดำเนิน</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>ระดับการศึกษา</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">ประกาศณีย์บัตรวิชาชีพชั้นสูง</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>สาขา</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">คอมพิวเตอร์ธุรกิจ</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>คณะ</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">บริหารธุรกิจ</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>วุฒิการศึกษา</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">อนุปริญญา</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>เกรด</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">2.50</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>จบปีการศึกษา</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">2558</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-9 offset-sm-3 mt-4">
+                                    <div class="col-12">
+                                        <h4 class="fontblue">Working / Internship Experience</h4>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-4 col-sm-2">
+                                                <label>บริษัท</label>
+                                            </div>
+                                            <div class="col-8 col-sm-10">
+                                                <label class="fontgray">บริษัท วีวาสนาดี จำกัด</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>ตำแหน่ง</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">Technical Support</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>เงินเดือน</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">17,500</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>ระดับ</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">เจ้าหน้าที่</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>ระยะเวลา</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">สิงหาคม 2561 - สิงหาคม 2563</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-4 col-sm-2">
+                                                <label>หน้าที่รับผิดชอบ</label>
+                                            </div>
+                                            <div class="col-8 col-sm-10">
+                                                <label class="fontgray">ตรวจเช็คบำรุงรักษาอุปกรณ์สำนักงานต่างๆ และช่วยเหลือ Support Hardware และ Software ภายในองค์กร สนันสนุนการทำงานของฝ่าย Programmer ในองค์กร</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-4 col-sm-2">
+                                                <label>บริษัท</label>
+                                            </div>
+                                            <div class="col-8 col-sm-10">
+                                                <label class="fontgray">บริษัท ทีโอที จำกัด(มหาชน)</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>ตำแหน่ง</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">Helpdesk</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>เงินเดือน</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">15,000</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>ระดับ</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">เจ้าหน้าที่ (สัญญาจ้างชั่วคราว)</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>ระยะเวลา</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">มกราคม 2561 - พฤษภาคม 2561</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-4 col-sm-2">
+                                                <label>หน้าที่รับผิดชอบ</label>
+                                            </div>
+                                            <div class="col-8 col-sm-10">
+                                                <label class="fontgray">บริการลูกค้าด้านการใช้งานโทรศัพท์ และ อินเตอร์เน็ต แจ้งปัญหาการใช้งานเข้าส่วนกลาง เพื่อประสานงานช่างเข้าทำการตรวจสอบพื้นที่</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-4 col-sm-2">
+                                                <label>บริษัท</label>
+                                            </div>
+                                            <div class="col-8 col-sm-10">
+                                                <label class="fontgray">บริษัท แจ่มใส พับลิชชิ่ง จำกัด</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>ตำแหน่ง</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">Parttime</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>เงินเดือน</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">-</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>ระดับ</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">เจ้าหน้าที่ (สัญญาจ้างชั่วคราว)</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-4 col-sm-4">
+                                                        <label>ระยะเวลา</label>
+                                                    </div>
+                                                    <div class="col-8 col-sm-8">
+                                                        <label class="fontgray">กันยายน 2558 - ตุลาคม 2558</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-4 col-sm-2">
+                                                <label>หน้าที่รับผิดชอบ</label>
+                                            </div>
+                                            <div class="col-8 col-sm-10">
+                                                <label class="fontgray">ตรวจเช็คบำรุงรักษาอุปกรณ์สำนักงานต่างๆ ที่เกี่ยวข้องกับฝ่าย IT ติดตั้งอุปกรณ์ต่างๆ ที่เกี่ยวกับงานฝ่าย IT</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-9 offset-sm-3 mt-4">
+                                    <div class="col-12">
+                                        <h4 class="fontblue">Other Skills</h4>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-3">
+                                                <label>ความสามารถทางภาษา</label>
+                                            </div>
+                                            <div class="col-4 col-sm-3">
+                                                <label class="fontgray">ภาษาไทย</label>
+                                            </div>
+                                            <div class="col-8 col-sm-6">
+                                                <div class="progress">
+                                                    <div class="progressbar thaibar"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 col-sm-3 offset-sm-3">
+                                                <label class="fontgray">ภาษาอังกฤษ</label>
+                                            </div>
+                                            <div class="col-8 col-sm-6">
+                                                <div class="progress">
+                                                    <div class="progressbar engbar"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-3">
+                                                <label>ความสามารถในการขับขี่</label>
+                                            </div>
+                                            <div class="col-4 col-sm-3">
+                                                <label class="fontgray">รถยนต์</label>
+                                            </div>
+                                            <div class="col-8 col-sm-6">
+                                                <i class="fas fa-check-circle modal-check"></i>
+                                            </div>
+                                            <div class="col-4 col-sm-3 offset-sm-3">
+                                                <label class="fontgray">รถจักรยานยนต์</label>
+                                            </div>
+                                            <div class="col-8 col-sm-6">
+                                                <i class="fas fa-check-circle modal-check"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-bluebutton" onclick="windown.print();"><i class="fas fa-print"></i> Print</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+   <div class="parallax">
+       <div class="container">
+            <div class="col-12 parallaxfont">
+                <h1 class="wow fadeInUp" data-wow-offset="400" data-wow-duration="1s">
+                    <span class="fontblue">B</span>EYOU <span class="fontblue"> D</span>OYOU <span class="fontblue"> F</span>ORYOU
+                </h1>
+            </div>
+       </div>
+   </div>
+    <div id="sectionblog" class="container section scrollspy sectionblog">
         <div class="row">
             <div class="col-12">
-                <h2>BLOG</h2>
+                <h2>PORTFOLIO</h2>
                 <hr class="blue-line">
             </div>
-            <div class="col-4 card-blog">
+            <div class="col-12">
+                <img src="/assets/img/main/Nodata.jpg" class="img-fulid">
+            </div>
+            <!-- <div class="col-4 card-blog">
                 <div class="card">
-                    <img src="img/blog/sample-picture.jpg" alt="blog" class="card-img-top">
+                    <img src="assets/img/blog/sample-picture.jpg" alt="blog" class="card-img-top">
                     <div class="card-body">
                         <h4 class="card-title">Sample Blog</h4>
                         <div class="div-blog">
@@ -74,54 +733,43 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-4 card-blog">
-                <div class="card">
-                    <img src="img/blog/sample-picture.jpg" alt="blog" class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title">Sample Blog</h4>
-                        <div class="div-blog">
-                            <button type="button" class="btn btn-blog" value="">See Blog</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4 card-blog">
-                <div class="card">
-                    <img src="img/blog/sample-picture.jpg" alt="blog" class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title">Sample Blog</h4>
-                        <div class="div-blog">
-                            <button type="button" class="btn btn-blog" value="">See Blog</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4 card-blog">
-                <div class="card">
-                    <img src="img/blog/sample-picture.jpg" alt="blog" class="card-img-top">
-                    <div class="card-body">
-                        <h4 class="card-title">Sample Blog</h4>
-                        <div class="div-blog">
-                            <button type="button" class="btn btn-blog" value="">See Blog</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </div>-->
         </div>
     </div>
-    <div class="jumbotron">
-        <div class="col-12 contacticon">
-            <a href="#">
+    <footer id="sectioncontact" class="jumbotron section scrollspy sectioncontact">
+        <div class="col-12 contacticon wow fadeInRight" data-wow-offset="100" data-wow-duration="1s">
+            <a href="https://www.facebook.com/kamol.regenz">
                 <i class="fab fa-facebook-square"></i>
             </a>
-            <a href="#">
-                <i class="fab fa-line"></i>
+            <a href="https://github.com/OFFSHIONPBTN">
+                <i class="fab fa-git-square"></i>
             </a>
         </div>
-    </div>
+    </footer>
     <div class="container copyright">
         <p>Copyright <i class="far fa-copyright"></i> Portfolio.com 2021</p>
     </div>
 </body>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/materialize.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+
+<script>
+
+    $(document).ready(function(){
+        $(".scrollspy").scrollSpy({
+            scrollOffset : 0
+        });
+
+        $(".collapse li").click(function(){
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+    });
+
+    new WOW().init();
+
+</script>
+
 </html>
