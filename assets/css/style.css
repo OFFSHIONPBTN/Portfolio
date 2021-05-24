@@ -2,6 +2,11 @@ nav.navbar{
     background-color: #5EABD5;
 }
 
+div#sectionhome{
+    position:relative;
+    top: 10px;
+}
+
 button.navbar-toggler{
     background-color: #5EABD5;
     border: none;
